@@ -6,13 +6,109 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+    <Button
+        android:id="@+id/btn_menu"
+        android:layout_width="60dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/menu"
+        android:onClick="onClickMenuBtn"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="253dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/searchBar"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/btn_cart"
+        app:layout_constraintStart_toEndOf="@+id/btn_menu"
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="" tools:targetApi="o" />
+
+    <Button
+        android:id="@+id/btn_cart"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/cart"
+        android:onClick="onClickCartBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_category1"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/button_circular"
+        android:text="@string/category"
+        app:layout_constraintEnd_toStartOf="@+id/btn_category2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_menu" />
+
+    <Button
+        android:id="@+id/btn_category2"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/button_circular"
+        android:text="@string/category"
+        app:layout_constraintEnd_toStartOf="@+id/btn_category3"
+        app:layout_constraintStart_toEndOf="@+id/btn_category1"
+        app:layout_constraintTop_toBottomOf="@+id/btn_menu" />
+
+    <Button
+        android:id="@+id/btn_category3"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/button_circular"
+        android:text="@string/category"
+        app:layout_constraintEnd_toStartOf="@+id/btn_category4"
+        app:layout_constraintStart_toEndOf="@+id/btn_category2"
+        app:layout_constraintTop_toBottomOf="@+id/btn_menu" />
+
+    <Button
+        android:id="@+id/btn_category4"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_circular"
+        android:text="@string/category"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btn_category3"
+        app:layout_constraintTop_toBottomOf="@+id/btn_menu" />
+
+    <FrameLayout
+        android:id="@+id/mainContainer"
+        android:layout_width="395dp"
+        android:layout_height="492dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_category2">
+
+    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

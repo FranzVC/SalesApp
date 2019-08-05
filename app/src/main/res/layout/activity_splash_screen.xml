@@ -5,14 +5,15 @@
 
     <ImageView
         android:id="@+id/splashScreen"
-        android:layout_width="wrap_content"
-        android:layout_height="255dp"
+        android:layout_width="411dp"
+        android:layout_height="549dp"
         android:layout_gravity="center"
         android:src="@drawable/ic_launcher_foreground" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World, splash" />
+        android:text="@string/version"
+        android:textAlignment="center"/>
 
 </LinearLayout>

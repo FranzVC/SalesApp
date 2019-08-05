@@ -60,25 +60,28 @@
 
     <Button
         android:id="@+id/btn_confirm_Li"
-        android:background="@drawable/button_around"
-        android:backgroundTint="@color/colorAccent"
-        android:textColor="@color/colorWhite"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/btnSignUpLateralMargins"
         android:layout_marginTop="@dimen/btnLoginMarginTop"
         android:layout_marginRight="@dimen/btnSignUpLateralMargins"
-        android:text="@string/btn_confirm"/>
+        android:background="@drawable/button_around"
+        android:backgroundTint="@color/colorAccent"
+        android:onClick="onClickConfirmBtn"
+        android:text="@string/btn_confirm"
+        android:textColor="@color/colorWhite" />
+
     <Button
         android:id="@+id/btn_signIn_Li"
-        android:background="@drawable/button_around"
-        android:backgroundTint="@color/colorPrimaryDark"
-        android:textColor="@color/colorWhite"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/btnSignUpLateralMargins"
         android:layout_marginRight="@dimen/btnSignUpLateralMargins"
-        android:text="@string/signUp" />
+        android:background="@drawable/button_around"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:onClick="onClickSignUpBtn"
+        android:text="@string/signUp"
+        android:textColor="@color/colorWhite" />
 
     <TextView
         android:id="@+id/tv_forgotPass_Li"
@@ -87,7 +90,6 @@
         android:layout_marginLeft="@dimen/tbxLateralMargins"
         android:layout_marginTop="10dp"
         android:layout_marginRight="@dimen/tbxLateralMargins"
-        android:onClick="forgot"
         android:text="@string/forgotPass"
         android:textAlignment="center" />
 </LinearLayout>
