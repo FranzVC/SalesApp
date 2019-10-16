@@ -1,6 +1,7 @@
 package com.e.salesapp;
 
 import android.content.Context;
+import android.content.Intent;
 import android.inputmethodservice.Keyboard;
 import android.os.Bundle;
 import android.util.Log;
@@ -58,10 +59,16 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_home) {
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
+            Intent intent = new Intent(this,InformationActivity.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_slideshow) {
+            Intent intent = new Intent(this,VoucherDetailsActivity.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_tools) {
+            Intent intent = new Intent(this,ProductDetailsActivity.class);
+            startActivity(intent);
 
         }
 

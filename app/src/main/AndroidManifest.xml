@@ -17,11 +17,16 @@
             android:theme="@style/AppTheme"/>
         <activity android:name=".SignUpActivity" />
         <activity android:name=".SplashScreenActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".CategoriesActivity">
+        <activity android:name=".ProductDetailsActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".InformationActivity"
+            android:label="@string/AboutUs"/>
+        <activity android:name=".VoucherDetailsActivity"
+            android:label="@string/finishPurchase"/>
+        <activity android:name=".CategoriesActivity" />
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
